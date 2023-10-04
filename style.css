@@ -7,7 +7,7 @@
 
 nav {
     background-color: white;
-    height: 10vh;
+    height: 16vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -77,8 +77,8 @@ label #cancel {
 }
 
 label #btn {
-    left: 40px;
-    top: 30px;
+    left: 16px;
+    top: 8px;
     font-size: 30px;
     color: white;
     padding: 6px 12px;
@@ -106,8 +106,10 @@ label #cancel {
 }
 
 #check:checked~label #cancel {
-    left: 195px;
+    left: 210px;
+    top: 45px;
 }
+
 
 #check:checked~section {
     margin-left: 250px;
