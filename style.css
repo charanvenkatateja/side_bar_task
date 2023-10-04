@@ -1,0 +1,122 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+nav {
+    background-color: white;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+
+.nav-cont {
+    display: flex;
+}
+
+.nav-item {
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+.sidebar {
+    position: fixed;
+    height: 100%;
+    left: -250px;
+    width: 250px;
+    background: #042331;
+    transition: all .5s ease;
+}
+
+.header {
+    font-size: 22px;
+    color: white;
+    text-align: center;
+    line-height: 60px;
+    background: #063146;
+    user-select: none;
+}
+
+.sidebar ul a {
+    height: 100%;
+    width: 100%;
+    font-size: 22px;
+    line-height: 65px;
+    display: block;
+    padding-left: 40px;
+    box-sizing: border-box;
+    color: white;
+    border-top: 1px solid green;
+    border-bottom: 1px solid skyblue;
+    transition: .4s;
+}
+
+ul li:hover a {
+    padding-left: 60px;
+}
+
+.sidebar ul a i {
+    margin-right: 15px;
+}
+
+#check {
+    display: none;
+}
+
+label #btn,
+label #cancel {
+    position: absolute;
+    cursor: pointer;
+    background: #042331;
+    border-radius: 3px;
+}
+
+label #btn {
+    left: 40px;
+    top: 30px;
+    font-size: 30px;
+    color: white;
+    padding: 6px 12px;
+    transition: all .5s ease;
+}
+
+label #cancel {
+    z-index: 1111;
+    left: -195px;
+    top: 23px;
+    font-size: 30px;
+    color: #0a5275;
+    padding: 4px 9px;
+    transition: all .5s ease;
+}
+
+#check:checked~.sidebar {
+    left: 0;
+}
+
+#check:checked~label #btn {
+    left: 250px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#check:checked~label #cancel {
+    left: 195px;
+}
+
+#check:checked~section {
+    margin-left: 250px;
+}
+
+section {
+    background: url('https://techmonitor.ai/wp-content/uploads/sites/4/2017/02/shutterstock_552493561.webp');
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+    transition: all .5s;
+}
